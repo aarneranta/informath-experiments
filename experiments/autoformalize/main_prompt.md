@@ -6,8 +6,24 @@ When formalizing a text, return two kinds of code as by-product:
 
 
 Examples:
-- .dk: `dist : Nat -> Nat -> Prop.`
-- .dkgf: `dist : "X is distinct from Y" | "X and Y are distinct" | $#1 \neq #2$
+- myconstants.dk: `dist : Nat -> Nat -> Prop.`
+- myconstants.dkgf: `dist : "X is distinct from Y" | "X and Y are distinct" | $#1 \neq #2$`
+
+## Feedback from Informath
+
+You need to have the RunInformath binary available. Then you should run the following after every update:
+```
+$ RunInformath -base=myconstants.dk myconstants.dkgf
+```
+to test the soundness of the symbol table.
+Also run
+```
+$ RunInformath -symboltables=myconstants.dkgf -variations myconstants.dk
+```
+to see the results of informalization.
+These should be compared with the original text in some way.
+Could you for instance rank them according to their closeness to the original text?
+
 
 
 ## More information in other files:
@@ -16,6 +32,8 @@ Examples:
 - baseconstants.dk: examples of Dedukti constants
 - verbalconstants.dkgf: symbol table for baseconstants.dk
 - words.tsv: English words available for symbol tables
+
+
 
 
 
