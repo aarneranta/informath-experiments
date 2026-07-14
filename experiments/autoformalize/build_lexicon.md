@@ -53,17 +53,17 @@ There is the following correspondence denoted by `<==>`:
 ```
 Another thing is the way in which natural language terms are applied to their arguments.
 The arguments can be subjects or objects or prepositional phrases.
-We can denote this by using variables X, Y, Z as examples that show the use of each term.
+We can denote this by using variables `#1`, `#2`, etc, in examples that show the use of each term, similarly to variables in LaTeX macros.
 Collective functions FunC use "and" between arguments.
 Thus:
 ```
   natural number : Noun ==> Nat : Type
   the zero : Name ==> Zero : Nat
-  the successor of X : Fun1 ==> Succ : Nat -> Nat
-  the sum of X and Y : Fun2 ==> plus : Nat -> Nat -> Nat
-  X is even : Adj1 ==> Even : Nat -> Prop
-  X is equal to Y : Adj2 ==> Eq : Nat -> Nat -> Prop
-  X is divisible by Y : Adj2 ==> Div : Nat -> Nat -> Prop
+  the successor of #1 : Fun1 ==> Succ : Nat -> Nat
+  the sum of #1 and #2 : Fun2 ==> plus : Nat -> Nat -> Nat
+  #1 is even : Adj1 ==> Even : Nat -> Prop
+  #1 is equal to #2 : Adj2 ==> Eq : Nat -> Nat -> Prop
+  #1 is divisible by #2 : Adj2 ==> Div : Nat -> Nat -> Prop
 ```
 When you give a natural language expression together with is arguments, it is possible to infer the exact natural language type from it by using a parser.
 
@@ -95,11 +95,12 @@ Here is an example, showing the above example in the precise format:
   Nat : "natural number" | $\mathbb{N}$
   Zero : "the zero" | $0$
   Succ : "the successor of X"
-  sum : "the sum of X and Y" | $#1 + #2$
-  Even : "X is even" 
-  Eq : "X is equal to Y" | "X and Y are equal" | $#1 = #2$
-  Div : "X is divisible by Y" | $#2 \mid #1$
+  sum : "the sum of #1 and #2" | $#1 + #2$
+  Even : "#1 is even" 
+  Eq : "#1 is equal to #2" | "#1 and #2 are equal" | $#1 = #2$
+  Div : "#1 is divisible by #2" | "#2 divides #1" | $#2 \mid #1$
 ```
+
 
 ## Checking the lexicon
 

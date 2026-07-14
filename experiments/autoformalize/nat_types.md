@@ -65,6 +65,6 @@ Exp, arguments A, x => X (A is a Kind that x ranges over):
 Exp, arguments X, Y, x => Z (X and Y are bounds; e.g. sum, integral): 
     "the <Noun> of Z where $x$ ranges from X to Y"
 ```
-The variable names `X`, `Y`, `Z`, `A`, `B`, `x` used in the examples are special constants included in the grammar for parsing examples.
-Therefore, you must use some of them and no other symbols, whereas the category symbols `<Adj>`, `<Noun>`, etc range over all words included in the Informath grammar.
+For the variables `X`, `Y`, etc, use variable names `#1`, `#2`, etc, which refer to argument positions in the Dedukti expression.
+
 

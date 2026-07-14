@@ -7,7 +7,7 @@ When formalizing a text, return two kinds of code as by-product:
 
 Examples:
 - myconstants.dk: `dist : Nat -> Nat -> Prop.`
-- myconstants.dkgf: `dist : "X is distinct from Y" | "X and Y are distinct" | $#1 \neq #2$`
+- myconstants.dkgf: `dist : "#1 is distinct from #2" | "#1 and #2 are distinct" | $#1 \neq #2$`
 
 ## Feedback from Informath
 
@@ -30,10 +30,8 @@ Could you for instance rank them according to their closeness to the original te
 
 - build_lexicon.md: explain the task in more detail
 - baseconstants.dk: examples of Dedukti constants
-- verbalconstants.dkgf: symbol table for baseconstants.dk
+- profileconstants.dkgf: symbol table for baseconstants.dk
 - words.tsv: English words available for symbol tables
-
-
 
 
 
