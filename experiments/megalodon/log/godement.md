@@ -27,38 +27,45 @@ Try RunInformath with empty symbol table: success
 
 touch empty.dkgf
 
-RunInformath -symboltables=empty.dkgf God1.dk | wc
+RunInformath -symboltables=empty.dkgf God1.dk | wc1
     7267  338497 2142610
 
 
 Extract LLM-generated symbol table
 
-grep "//LLM" God1.mg | sed -r 's/^\/\/LLM //' >God1.dkgf
+egrep -e "//LLM|//REA|/GOD1\:" God1.mg | cut -f2- -d' ' >OrigGod1.dkgf 
 
 Analyse this symbol table
 
-RunInformath -try-symboltable God1.dkgf | grep OK | wc
+RunInformath -try-symboltable OrigGod1.dkgf | grep OK | wc
+     129    1785   10594
+RunInformath -try-symboltable OrigGod1.dkgf | grep BAD | wc
+     855   24142  159200
+
+RunInformath -try-symboltable OrigGod1.dkgf | grep OK | wc
       81    1079    6308
 
-RunInformath -try-symboltable God1.dkgf | grep BAD | wc
+RunInformath -try-symboltable OrigGod1.dkgf | grep BAD | wc
      431   11155   75782
 
-RunInformath -unknown-words God1.dkgf | grep -v "\t1$" | wc
-      74     148     634
+RunInformath -unknown-words OrigGod1.dkgf | grep -v "\t1$" | wc
+     112     224    1028
 
-Manual edits in the beginning (logical constants etc)
-
-diff OrigGod1.dkgf God1.dkgf | grep "> " | wc
-       8     115     536
-
-RunInformath -try-symboltable God1.dkgf | grep BAD | wc
-     426   11027   75021
-
-Test the OK part of the symbol table
+Extract the OK part of the symbol table
 
 RunInformath -keep-ok-entries God1.dkgf | grep -v BAD >OkGod1.dkgf
 
+Manual edits in the beginning (logical constants etc)
+
+diff OrigGod1.dkgf OkGod1.dkgf | grep "> " | wc
+    10      82     461
+
+
+Test informalization with it
+
 RunInformath -symboltables=OkGod1.dkgf God1.dk
 
+
+grep -v TODO God1.dk | head -200 | RunInformath -symboltables=OkGod1.dkgf -to-latex-doc >g100.tex
 
 

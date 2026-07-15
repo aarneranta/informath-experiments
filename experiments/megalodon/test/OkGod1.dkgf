@@ -1,0 +1,137 @@
+set : "set"
+Prop : "proposition"
+Eps_i : "the choice operator for #1" | $\mathrm{Eps\_i}(#1)$
+True : "the true proposition" | $\top$
+False : FalseProp | "the false proposition" | $\bot$
+not : CoreNotProp | "the negation of #1" | $\neg #1$
+and : CoreAndProp | "the conjunction of #1 and #2" | $#1 \land #2$
+or : CoreOrProp | "the disjunction of #1 and #2" | $#1 \lor #2$
+iff : CoreIffProp | "the equivalence of #1 and #2" | $#1 \leftrightarrow #2$
+forall : CoreAllProp
+exists : CoreExistProp
+eq : "#1 is equal to #2" | "the equality of #1 and #2" | $#1 = #2$
+neq : "#1 is distinct from #2" | "the inequality of #1 and #2" | $#1 \neq #2$
+In : "#1 is an element of #2" | $#1 \in #2$
+Subq : "#1 is a subset of #2" | $#1 \subseteq #2$
+Empty : "the empty set" | $\emptyset$
+Union : "the union of #1" | $\bigcup #1$
+Power : "the powerset of #1" | $\wp #1$
+TransSet : "#1 is transitive" | $\mathrm{TransSet}(#1)$
+Repl_closed : "#1 is closed under replacement" | $\mathrm{Repl\_closed}(#1)$
+UPair : "the unordered pair of #1 and #2" | $\{#1,#2\}$
+Sing : "the singleton of #1" | $\{#1\}$
+binunion : "the binary union of #1 and #2" | $#1 \cup #2$
+Sep : "the separation subset of #1 by #2" | $\mathrm{Sep}$
+binintersect : "the binary intersection of #1 and #2" | $#1 \cap #2$
+setminus : "the set difference of #1 and #2" | $#1 \setminus #2$
+ordsucc : "the ordinal successor of #1" | $#1 \cup \{#1\}$
+nat_p : "#1 is a natural number" | $\mathrm{nat\_p}(#1)$
+equip : "#1 and #2 have the same cardinality" | $\mathrm{equip}(#1,#2)$
+ordinal : "#1 is an ordinal" | $\mathrm{ordinal}(#1)$
+finite : "#1 is finite" | $\mathrm{finite}(#1)$
+infinite : "#1 is infinite" | $\mathrm{infinite}(#1)$
+Inj1 : "the first coproduct injection of #1" | $\mathrm{Inj1}(#1)$
+Inj0 : "the zeroth coproduct injection of #1" | $\mathrm{Inj0}(#1)$
+proj0 : "the first projection of #1" | $\pi_0(#1)$
+proj1 : "the second projection of #1" | $\pi_1(#1)$
+Sigma : "the dependent sum of #1 and #2" | $\Sigma_{#1} #2$
+setprod : "the Cartesian product of #1 and #2" | $#1 \times #2$
+pair_p : "#1 is an ordered pair" | $\mathrm{pair\_p}(#1)$
+Pi : "the dependent product of #1 and #2" | $\Pi_{#1} #2$
+upper_bound : "#1 is an upper bound of #2" | $#1 \text{ is an upper bound of } #2$
+upper_bound : "#1 is an upper bound of #2" | $#1 \text{ is an upper bound of } #2$
+bounded : "#1 is bounded" | $#1 \text{ is bounded}$
+bounded : "#1 is bounded" | $#1 \text{ is bounded}$
+sup : "the supremum of #1" | $\sup #1$
+sup : "the supremum of #1" | $\sup #1$
+inf : "the infimum of #1" | $\inf #1$
+inf : "the infimum of #1" | $\inf #1$
+max : "the maximum of #1" | $\max #1$
+max : "the maximum of #1" | $\max #1$
+min : "the minimum of #1" | $\min #1$
+min : "the minimum of #1" | $\min #1$
+R_seq : "#1 is a real sequence" | $\mathrm{R\_seq}(#1)$
+continuous_at : "#1 is continuous at #3 on #2" | $#1 \text{ is continuous at } #3 \text{ on } #2$
+continuous_at : "#1 is continuous at #3 on #2" | $#1 \text{ is continuous at } #3 \text{ on } #2$
+continuous_on : "#1 is continuous on #2" | $#1 \text{ is continuous on } #2$
+continuous_on : "#1 is continuous on #2" | $#1 \text{ is continuous on } #2$
+uniformly_continuous_on : "#1 is uniformly continuous on #2" | $#1 \text{ is uniformly continuous on } #2$
+uniformly_continuous_on : "#1 is uniformly continuous on #2" | $#1 \text{ is uniformly continuous on } #2$
+is_metric : "#1 is metric" | $\mathrm{is\_metric}(#1,#2)$
+diffquot : "the difference quotient of #1 at #2" | $\frac{#1(x)-#1(#2)}{x-#2}$
+diffquot : "the difference quotient of #1 at #2" | $\frac{#1(x)-#1(#2)}{x-#2}$
+uniform_norm : "the uniform norm of #2 on #1" | $\mid#2\mid_{#1}$
+uniform_norm : "the uniform norm of #2 on #1" | $\mid#2\mid_{#1}$
+is_real_vector_space : "#1 is a real vector space" | $#1 \text{ is a real vector space}$
+is_real_vector_space : "#1 is a real vector space" | $#1 \text{ is a real vector space}$
+is_vector_subspace : "#6 is a vector subspace of #1" | $#6 \text{ is a vector subspace of } #1$
+is_vector_subspace : "#6 is a vector subspace of #1" | $#6 \text{ is a vector subspace of } #1$
+vs_span : "the span of #6 in #1" | $\spn(#6)$
+vs_span : "the span of #6 in #1" | $\spn(#6)$
+map_id : "the identity map on #1" | $\operatorname{id}$
+map_zero : "the zero map from #1 to #2" | $0$
+is_linear_inverse : "#1 is a linear inverse of #2" | $\mathrm{is\_linear\_inverse}(#1,#2,#3,#4,#5,#6,#7,#8,#9,#10,#11,#12)$
+is_convex : "#6 is convex in #1" | $#6 \text{ is convex}$
+is_convex : "#6 is convex in #1" | $#6 \text{ is convex}$
+is_norm : "#6 is a norm on #1" | $\mid#6\mid$
+is_norm : "#6 is a norm on #1" | $\mid#6\mid$
+sup_ext_on : "the supremum of #1 over #2" | $\sup #1$
+operator_norm : "the operator norm of #13" | $\mid#13\mid_{L(#1,#7)}$
+operator_norm : "the operator norm of #13" | $\mid#13\mid_{L(#1,#7)}$
+sv_differentiable_at : "#1 is differentiable at #2" | $\mathrm{sv\_differentiable\_at}(#1,#2,#3,#4,#5)$
+sv_derivative_at : "the derivative of #3 at #5" | $D#3(#5)$
+sv_derivative_at : "the derivative of #3 at #5" | $D#3(#5)$
+sv_derivative : "the derivative map of #1" | $#1\,'(#2)$
+sv_differentiable_on : "#3 is differentiable on #4" | $#3 \text{ is differentiable on } #4$
+sv_differentiable_on : "#3 is differentiable on #4" | $#3 \text{ is differentiable on } #4$
+ms_uniformly_continuous_on : "#1 is uniformly continuous on #2" | $\mathrm{ms\_uniformly\_continuous\_on}(#1,#2,#3,#4,#5,#6)$
+leibniz_int_Icc : "the Leibniz integral on the closed interval from #1 to #2" | $\mathrm{leibniz\_int\_Icc}(#1,#2,#3,#4)$
+is_potential_of : "#1 is a potential of #2" | $\mathrm{is\_potential\_of}(#1,#2,#3,#4)$
+countable : "#1 is countable" | $\mathrm{countable}(#1)$
+ms_dense : "#1 is dense in #2" | $\mathrm{ms\_dense}(#1,#2,#3)$
+is_R_function_algebra : "#1 is a real function algebra" | $\mathrm{is\_R\_function\_algebra}(#1,#2)$
+separates_points : "#1 separates points" | $\mathrm{separates\_points}(#1,#2)$
+contains_constants : "#1 contains the constant functions" | $\mathrm{contains\_constants}(#1,#2)$
+is_C_function_algebra : "#1 is a complex function algebra" | $\mathrm{is\_C\_function\_algebra}(#1,#2)$
+contains_complex_constants : "#1 contains the complex constant functions" | $\mathrm{contains\_complex\_constants}(#1,#2)$
+ms_bounded : "#1 is bounded" | $\mathrm{ms\_bounded}(#1,#2,#3)$
+ms_interior : "the interior of #1" | $\mathrm{ms\_interior}(#1,#2,#3)$
+ms_closure : "the closure of #1" | $\mathrm{ms\_closure}(#1,#2,#3)$
+ms_boundary : "the boundary of #1" | $\mathrm{ms\_boundary}(#1,#2,#3)$
+indicator_fun : "the indicator function of #1" | $\mathrm{indicator\_fun}(#1,#2,#3)$
+sv_jacobian_matrix : "the Jacobian matrix of #1" | $\mathrm{sv\_jacobian\_matrix}(#1,#2,#3,#4,#5)$
+jacobian_det : "the Jacobian determinant of #2 at #4" | $J_{#2}(#4)$
+jacobian_det : "the Jacobian determinant of #2 at #4" | $J_{#2}(#4)$
+factorial : "the factorial of #1" | $#1 !$
+complex_exp : "the complex exponential of #1" | $e^{#1}$
+complex_exp : "the complex exponential of #1" | $e^{#1}$
+complex_cos : "the complex cosine of #1" | $\cos(#1)$
+complex_cos : "the complex cosine of #1" | $\cos(#1)$
+complex_sin : "the complex sine of #1" | $\sin(#1)$
+complex_sin : "the complex sine of #1" | $\sin(#1)$
+pi : "the number $\pi$" | $\pi$
+pi : "the number $\pi$" | $\pi$
+associative_on : "#2 is associative on #1" | $\forall x,y,z\in #1,\ #2(x,#2(y,z))=#2(#2(x,y),z)$
+commutative_on : "#2 is commutative on #1" | $\forall x,y\in #1,\ #2(x,y)=#2(y,x)$
+permutation_composition : "composition in the permutation group of #1" | $#2\circ #3$
+group_homomorphism_image : "the image of #6" | $\operatorname{Im}(#6)$
+group_homomorphism_kernel : "the kernel of #6" | $\operatorname{Ker}(#6)$
+group_image_of_subset : "the image of #6 on #5" | $#6[#5]$
+int_mod_class : "the congruence class of #2 modulo #1" | $#2+#1\mathbb Z$
+int_mod_quotient : "the additive quotient group of the integers modulo #1" | $\mathbb Z/#1\mathbb Z$
+int_mod_addition : "addition modulo #1" | $#2+#3\pmod {#1}$
+int_mod_multiplication : "multiplication modulo #1" | $#2#3\pmod {#1}$
+principal_ideal_domain : "#1 is a principal ideal domain" | $#1\text{ is a PID}$
+quadratic_extension_addition : "addition in the quadratic extension of #1" | $(x,y)+(x',y')=(x+x',y+y')$
+opposite_ring_multiplication : "multiplication in the opposite ring of #1" | $x*y=yx$
+module_homomorphism_scalar : "pointwise scalar multiplication of a module homomorphism" | $(\lambda f)(x)=\lambda f(x)$
+matrix_left_scalar : "left scalar multiplication of #6 by #5" | $#5#6$
+matrix_right_scalar : "right scalar multiplication of #6 by #5" | $#6#5$
+submodule_family_sum_map : "the canonical summation map from the product of #8 to #4" | $(x_i)\mapsto\sum_i x_i$
+left_noetherian_ring : "#1 is a left Noetherian ring" | $#1\text{ is left Noetherian}$
+right_noetherian_ring : "#1 is a right Noetherian ring" | $#1\text{ is right Noetherian}$
+noetherian_ring : "#1 is a commutative Noetherian ring" | $#1\text{ is Noetherian}$
+maximal_left_ideal : "#4 is a maximal left ideal of #1" | $#4\triangleleft_{\max,l}#1$
+matrix_adjugate : "the adjugate matrix of #5" | $\widetilde{#5}$
+maximal_proper_ideal : "#4 is a maximal proper ideal of #1" | $#4\text{ is maximal}$
+symmetric_bilinear_form : "#8 is a symmetric bilinear form on #4" | $#8(x,y)=#8(y,x)$
