@@ -52,9 +52,11 @@ EEnum.    Exp25 ::= "{" [Exp] "}" ;
 ESet.     Exp25 ::= "set" ;
 EApp.     Exp24 ::= Exp24 Exp25 ;
 
-EEq.      Exp22 ::= Exp23 "=" Exp23 ;
+EEq.      Exp18 ::= Exp19 "=" Exp19 ;
 ECEq.     Exp22 ::= Exp23 "c=" Exp23 ;
 ECIn.     Exp22 ::= Exp23 ":e" Exp23 ;
+
+EIfThenElse. Exp4 ::= "if" Exp5 "then" Exp6 "else" Exp4 ;
 
 ---E_Infix_exp_SNo_nat. Exp7 ::= Exp8 "^" Exp7 ;
 E_Prefix_not. Exp19 ::= "~" Exp19 ;
@@ -80,7 +82,7 @@ E_Infix_SNoLe. Exp17 ::= Exp18 "<=" Exp18 ;
 E_Infix_or. Exp21 ::= Exp21 "\\/" Exp22 ;
 E_Prefix_minus_SNo. Exp12 ::= "-" Exp12 ;
 ---E_BinderP_ex. Exp3 ::= "exists" Bind "," Exp3 ;
-E_Infix_eq. Exp18 ::= Exp19 "=" Exp19 ;
+---E_Infix_eq. Exp18 ::= Exp19 "=" Exp19 ;
 E_Infix_setexp. Exp14 ::= Exp14 ":^:" Exp15 ;
 E_BinderP_Sigma. Exp3 ::= "Sigma_" Bind "," Exp3 ;
 E_Infix_div_SNo. Exp10 ::= Exp11 ":/:" Exp11 ;

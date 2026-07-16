@@ -96,7 +96,7 @@ transDoc = trans where
     E_Infix_iff x y -> apps (Ident "iff") (trans x) (trans y)
     E_Infix_div_SNo x y -> apps (Ident "div_SNo") (trans x) (trans y)
     E_Infix_setprod x y -> apps (Ident "setprod") (trans x) (trans y)
-    E_Infix_eq x y -> apps (Ident "eq") (trans x) (trans y)
+--    E_Infix_eq x y -> apps (Ident "eq") (trans x) (trans y)
     E_Infix_or x y -> apps (Ident "or") (trans x) (trans y)
     E_Infix_setsum x y -> apps (Ident "setsum") (trans x) (trans y)
     E_Infix_SNoLe x y -> apps (Ident "SNoLe") (trans x) (trans y)

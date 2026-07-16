@@ -76,6 +76,8 @@ exp2exp exp = case exp of
 
   E_BinderP_Pi bind exp -> foldr (binder "Pi_") (exp2exp exp) (bind2binds bind)
   E_BinderP_Sigma bind exp -> foldr (binder "Sigma_") (exp2exp exp) (bind2binds bind)
+
+  EIfThenElse c a b -> wrap "ifThenElse" [exp2exp c, exp2exp a, exp2exp b]
   
   _ -> D.EIdent (D.QIdent "TODO_Exp")
 
