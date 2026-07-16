@@ -28,6 +28,10 @@ ordsucc : "the ordinal successor of #1" | $#1 \cup \{#1\}$
 nat_p : "#1 is a natural number" | $\mathrm{nat\_p}(#1)$
 equip : "#1 and #2 have the same cardinality" | $\mathrm{equip}(#1,#2)$
 ordinal : "#1 is an ordinal" | $\mathrm{ordinal}(#1)$
+add_nat : "the sum of #1 and #2" | $#1 + #2$
+mul_nat : "the product of #1 and #2" | $#1 \cdot #2$
+add : "the sum of #1 and #2" | $#1 + #2$
+mul : "the product of #1 and #2" | $#1 \cdot #2$
 finite : "#1 is finite" | $\mathrm{finite}(#1)$
 infinite : "#1 is infinite" | $\mathrm{infinite}(#1)$
 Inj1 : "the first coproduct injection of #1" | $\mathrm{Inj1}(#1)$
@@ -38,6 +42,10 @@ Sigma : "the dependent sum of #1 and #2" | $\Sigma_{#1} #2$
 setprod : "the Cartesian product of #1 and #2" | $#1 \times #2$
 pair_p : "#1 is an ordered pair" | $\mathrm{pair\_p}(#1)$
 Pi : "the dependent product of #1 and #2" | $\Pi_{#1} #2$
+minus_SNo : "the opposite of #1" | "the additive inverse of #1" | $-#1$
+add_SNo : "the sum of #1 and #2" | $#1 + #2$
+abs_SNo : "the absolute value of #1" | $|#1|$
+mul_SNo : "the product of #1 and #2" | $#1 \cdot #2$
 upper_bound : "#1 is an upper bound of #2" | $#1 \text{ is an upper bound of } #2$
 upper_bound : "#1 is an upper bound of #2" | $#1 \text{ is an upper bound of } #2$
 bounded : "#1 is bounded" | $#1 \text{ is bounded}$
@@ -60,8 +68,8 @@ uniformly_continuous_on : "#1 is uniformly continuous on #2" | $#1 \text{ is uni
 is_metric : "#1 is metric" | $\mathrm{is\_metric}(#1,#2)$
 diffquot : "the difference quotient of #1 at #2" | $\frac{#1(x)-#1(#2)}{x-#2}$
 diffquot : "the difference quotient of #1 at #2" | $\frac{#1(x)-#1(#2)}{x-#2}$
-uniform_norm : "the uniform norm of #2 on #1" | $\mid#2\mid_{#1}$
-uniform_norm : "the uniform norm of #2 on #1" | $\mid#2\mid_{#1}$
+uniform_norm : "the uniform norm of #2 on #1" | $\|#2\|_{#1}$
+uniform_norm : "the uniform norm of #2 on #1" | $\|#2\|_{#1}$
 is_real_vector_space : "#1 is a real vector space" | $#1 \text{ is a real vector space}$
 is_real_vector_space : "#1 is a real vector space" | $#1 \text{ is a real vector space}$
 is_vector_subspace : "#6 is a vector subspace of #1" | $#6 \text{ is a vector subspace of } #1$
@@ -73,11 +81,11 @@ map_zero : "the zero map from #1 to #2" | $0$
 is_linear_inverse : "#1 is a linear inverse of #2" | $\mathrm{is\_linear\_inverse}(#1,#2,#3,#4,#5,#6,#7,#8,#9,#10,#11,#12)$
 is_convex : "#6 is convex in #1" | $#6 \text{ is convex}$
 is_convex : "#6 is convex in #1" | $#6 \text{ is convex}$
-is_norm : "#6 is a norm on #1" | $\mid#6\mid$
-is_norm : "#6 is a norm on #1" | $\mid#6\mid$
+is_norm : "#6 is a norm on #1" | $\|#6\|$
+is_norm : "#6 is a norm on #1" | $\|#6\|$
 sup_ext_on : "the supremum of #1 over #2" | $\sup #1$
-operator_norm : "the operator norm of #13" | $\mid#13\mid_{L(#1,#7)}$
-operator_norm : "the operator norm of #13" | $\mid#13\mid_{L(#1,#7)}$
+operator_norm : "the operator norm of #13" | $\|#13\|_{L(#1,#7)}$
+operator_norm : "the operator norm of #13" | $\|#13\|_{L(#1,#7)}$
 sv_differentiable_at : "#1 is differentiable at #2" | $\mathrm{sv\_differentiable\_at}(#1,#2,#3,#4,#5)$
 sv_derivative_at : "the derivative of #3 at #5" | $D#3(#5)$
 sv_derivative_at : "the derivative of #3 at #5" | $D#3(#5)$
@@ -109,8 +117,6 @@ complex_cos : "the complex cosine of #1" | $\cos(#1)$
 complex_cos : "the complex cosine of #1" | $\cos(#1)$
 complex_sin : "the complex sine of #1" | $\sin(#1)$
 complex_sin : "the complex sine of #1" | $\sin(#1)$
-pi : "the number $\pi$" | $\pi$
-pi : "the number $\pi$" | $\pi$
 associative_on : "#2 is associative on #1" | $\forall x,y,z\in #1,\ #2(x,#2(y,z))=#2(#2(x,y),z)$
 commutative_on : "#2 is commutative on #1" | $\forall x,y\in #1,\ #2(x,y)=#2(y,x)$
 permutation_composition : "composition in the permutation group of #1" | $#2\circ #3$

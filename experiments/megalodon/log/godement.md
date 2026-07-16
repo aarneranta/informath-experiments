@@ -66,6 +66,34 @@ Test informalization with it
 RunInformath -symboltables=OkGod1.dkgf God1.dk
 
 
-grep -v TODO God1.dk | head -200 | RunInformath -symboltables=OkGod1.dkgf -to-latex-doc >g100.tex
+grep -v TODO God1.dk | head -100 | RunInformath -symboltables=OkGod1.dkgf -to-latex-doc >g100.tex
+
+grep -v TODO God1.dk | head -100 | RunInformath -symboltables=OkGod1.dkgf -to-latex-doc -to-lang=Cze >g100.tex
+
+
+Analyse frequencies of identifiers
+
+RunInformath -idents God1.dk | more
+set     12163
+forall  6089
+step    5689
+K       3939
+
+
+Analyse frequencies of identifiers not in the accepted symbol table
+
+RunInformath -unknown-idents -symboltables=OkGod1.dkgf God1.dk | more
+step    5689
+K       3939
+SIdent  2055
+add     1932
+mul     1742
+
+
+Second round: edit directly in the partly bad EditedGod1.dkgf and do
+
+diff OrigGod1.dkgf EditedGod1.dkgf
+
+RunInformath -keep-ok-entries EditedGod1.dkgf | grep -v BAD >OkGod1.dkgf
 
 
