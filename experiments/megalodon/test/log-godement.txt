@@ -97,3 +97,13 @@ diff OrigGod1.dkgf EditedGod1.dkgf
 RunInformath -keep-ok-entries EditedGod1.dkgf | grep -v BAD >OkGod1.dkgf
 
 
+## 2026-07-17 larger version of Gor1.mg
+
+From https://github.com/mgwiki/god1
+
+git mv God1.mg God0.mg
+
+ln -s ../../../../mgwiki/god1/mglib/God1.mg
+
+make md2dk
+

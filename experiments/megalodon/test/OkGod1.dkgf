@@ -1,6 +1,6 @@
 set : "set"
 Prop : "proposition"
-Eps_i : "the choice operator for #1" | $\mathrm{Eps\_i}(#1)$
+Eps_i : "the choice operator for #1" | $\epsilon(#1)$
 True : "the true proposition" | $\top$
 False : FalseProp | "the false proposition" | $\bot$
 not : CoreNotProp | "the negation of #1" | $\neg #1$
@@ -11,7 +11,7 @@ iff : CoreIffProp | "the equivalence of #1 and #2" | $#1 \leftrightarrow #2$
 forall : CoreAllProp
 exists : CoreExistProp
 eq : "#1 is equal to #2" | "the equality of #1 and #2" | $#1 = #2$
-CEq : "#1 is equal to #2" | "the equality of #1 and #2" | $#1 = #2$
+CEq : "#1 is a subset of #2" | $#1 \subseteq #2$
 Eq : "#1 is equal to #2" | "the equality of #1 and #2" | $#1 = #2$
 neq : "#1 is distinct from #2" | "the inequality of #1 and #2" | $#1 \neq #2$
 In : "#1 is an element of #2" | $#1 \in #2$
@@ -22,6 +22,7 @@ Union : "the union of #1" | $\bigcup #1$
 Power : "the powerset of #1" | $\wp #1$
 TransSet : "#1 is transitive" | $\mathrm{TransSet}(#1)$
 Repl_closed : "#1 is closed under replacement" | $\mathrm{Repl\_closed}(#1)$
+UnivOf : "the universe of #1" | $\mathcal{U}(#1)$
 UPair : "the unordered pair of #1 and #2" | $\{#1,#2\}$
 Sing : "the singleton of #1" | $\{#1\}$
 binunion : "the binary union of #1 and #2" | $#1 \cup #2$

@@ -23,7 +23,7 @@ import Data.List (intersperse, nub, nubBy, sortOn)
 --
 main = do
   putStrLn $ prLatexFile $ unlines $ intersperse "\n\n" [
-    linesDemo exLines1,
+----    linesDemo exLines1,
     linesDemo exLines2,
     termDemo exTerm1,
     termDemo exTerm2, 
@@ -38,10 +38,10 @@ linesDemo ex = unlines $ intersperse "\n\n" [
     , prls ex
     , "Generated deduction tree"
     , prst (lines2steptree ex)
-    , "Proof term generated from the tree" ++ testEq 1 0
-    , mathdisplay (prt termex)
-    , "Deduction tree generated from the proof term" ++ testEq (lines2steptree ex) (term2tree termex)
-    , prst (term2tree termex)
+----    , "Proof term generated from the tree" ++ testEq 1 0
+----    , mathdisplay (prt termex)
+----    , "Deduction tree generated from the proof term" ++ testEq (lines2steptree ex) (term2tree termex)
+----    , prst (term2tree termex)
     , "Linear proof generated from the proof term" ++ testEq ex (term2lines termex)
     , prls (term2lines termex)
     , "\\clearpage"

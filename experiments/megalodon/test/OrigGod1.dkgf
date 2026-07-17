@@ -1,12 +1,13 @@
-Eps_i : "the choice operator for #1" | $\mathrm{Eps\_i}(#1)$
+Eps_i : "the epsilon-choice operator for the predicate #1" | $\mathrm{Eps\_i}(#1)$
 True : "the true proposition" | $\top$
-False : FalseProp | "the false proposition" | $\bot$
-not : CoreNotProp | "the negation of #1" | $\neg #1$
-and : CoreAndProp | "the conjunction of #1 and #2" | $#1 \land #2$
-or : CoreOrProp | "the disjunction of #1 and #2" | $#1 \lor #2$
-iff : CoreIffProp | "the equivalence of #1 and #2" | $#1 \leftrightarrow #2$
-eq : "#1 is equal to #2" | "the equality of #1 and #2" | $#1 = #2$
-neq : "#1 is distinct from #2" | "the inequality of #1 and #2" | $#1 \neq #2$
+False : "the false proposition" | $\bot$
+not : "the negation of proposition #1" | $\neg #1$
+and : "the conjunction of propositions #1 and #2" | $#1 \land #2$
+or : "the disjunction of propositions #1 and #2" | $#1 \lor #2$
+iff : "the equivalence of propositions #1 and #2" | $#1 \leftrightarrow #2$
+eq : "the equality of #1 and #2" | $#1 = #2$
+neq : "the inequality of #1 and #2" | $#1 \neq #2$
+ex : "the existential proposition over #1" | $\exists #1$
 In : "#1 is an element of #2" | $#1 \in #2$
 Subq : "#1 is a subset of #2" | $#1 \subseteq #2$
 Empty : "the empty set" | $\emptyset$
