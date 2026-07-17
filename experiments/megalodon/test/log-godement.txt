@@ -121,4 +121,23 @@ Should be good for now, because:
 
 
 
+# start with Chad's Dk dump
+
+ln -s ../../../../mgwiki/ded1/God1NoProofs.dk
+
+which was produced in mgwiki/ded1 by
+
+../Megalodon/bin/megalodon -sexprinfo -ind indexJul172026 ../god1/mglib/God1.mg >God1.sexpr
+
+head -12 todedukti.lisp                                                                    
+					; usage:
+					; megalodon .. -sexprinfo foo.mg > foo.sexpr
+					; sbcl
+					; (load "todedukti.lisp")
+					; (mg-to-dedukti "foo.sexpr" "foo.dk")
+					; or if you want a dk file without proofs:
+					; (mg-to-dedukti "foo.sexpr" "foo.dk" nil)
+					; Note: if you translate with proofs, the translation will fail on incomplete proofs (which typically end with Admitted instead of Qed)
+
+
 

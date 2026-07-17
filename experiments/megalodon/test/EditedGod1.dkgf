@@ -1,6 +1,14 @@
+Type : "type"
+type : "small type"
+arr : "mapping from #1 to #2" | $#1 \rightarrow #2$
 set : "set"
-Prop : "proposition"
-Eps_i : "the choice operator for #1" | $\epsilon(#1)$
+prop : "proposition"
+pf : "proof of #1"
+Ap : "#3 applied to #4" | $#3(#4)$
+Lam : "the function #4" | $\lambda $3 . $4$
+Imp : CoreIfProp
+All : CoreAllProp
+Eps_i : "the choice operator" | $\epsilon$
 True : "the true proposition" | $\top$
 False : FalseProp | "the false proposition" | $\bot$
 not : CoreNotProp | "the negation of #1" | $\neg #1$

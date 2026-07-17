@@ -1,6 +1,12 @@
+Type : "type"
+type : "small type"
+arr : "mapping from #1 to #2" | $#1 \rightarrow #2$
 set : "set"
-Prop : "proposition"
-Eps_i : "the choice operator for #1" | $\epsilon(#1)$
+prop : "proposition"
+pf : "proof of #1"
+Imp : CoreIfProp
+All : CoreAllProp
+Eps_i : "the choice operator" | $\epsilon$
 True : "the true proposition" | $\top$
 False : FalseProp | "the false proposition" | $\bot$
 not : CoreNotProp | "the negation of #1" | $\neg #1$
@@ -122,6 +128,8 @@ complex_cos : "the complex cosine of #1" | $\cos(#1)$
 complex_cos : "the complex cosine of #1" | $\cos(#1)$
 complex_sin : "the complex sine of #1" | $\sin(#1)$
 complex_sin : "the complex sine of #1" | $\sin(#1)$
+complex_exp_term_modulus_seq : "the sequence of term moduli in the complex exponential series at #1" | $\mathrm{complex\_exp\_term\_modulus\_seq}(#1,#2)$
+law_of_composition : "#2 is a composition on #1" | $#2 : #1 \times #1 \longrightarrow #1$
 associative_on : "#2 is associative on #1" | $\forall x,y,z\in #1,\ #2(x,#2(y,z))=#2(#2(x,y),z)$
 commutative_on : "#2 is commutative on #1" | $\forall x,y\in #1,\ #2(x,y)=#2(y,x)$
 permutation_composition : "composition in the permutation group of #1" | $#2\circ #3$
@@ -142,7 +150,9 @@ submodule_family_sum_map : "the canonical summation map from the product of #8 t
 left_noetherian_ring : "#1 is a left Noetherian ring" | $#1\text{ is left Noetherian}$
 right_noetherian_ring : "#1 is a right Noetherian ring" | $#1\text{ is right Noetherian}$
 noetherian_ring : "#1 is a commutative Noetherian ring" | $#1\text{ is Noetherian}$
+homogeneous_linear_system_solution : "#7 solves the homogeneous linear system with coefficient matrix #6" | $#6#7=0$
 maximal_left_ideal : "#4 is a maximal left ideal of #1" | $#4\triangleleft_{\max,l}#1$
+invertible_square_submatrix_of_order : "#6 contains an invertible square submatrix of order #7" | $#6\text{ has an invertible }#7\times #7\text{ submatrix}$
 matrix_adjugate : "the adjugate matrix of #5" | $\widetilde{#5}$
 maximal_proper_ideal : "#4 is a maximal proper ideal of #1" | $#4\text{ is maximal}$
 symmetric_bilinear_form : "#8 is a symmetric bilinear form on #4" | $#8(x,y)=#8(y,x)$
