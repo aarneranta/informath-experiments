@@ -563,7 +563,7 @@ complex_cos_first_positive_real_zero_pred : "#1 is the first positive real zero 
 factorial_step_fun : "the factorial step function associated to #1" | $\mathrm{factorial\_step\_fun}(#1,#2)$
 complex_exp_term_seq : "the sequence of terms in the complex exponential series at #1" | $\mathrm{complex\_exp\_term\_seq}(#1,#2)$
 complex_exp_term_modulus_seq : "the sequence of term moduli in the complex exponential series at #1" | $\mathrm{complex\_exp\_term\_modulus\_seq}(#1,#2)$
-law_of_composition : "#2 is a law of composition on #1" | $#2 : #1 \times #1 \longrightarrow #1$
+law_of_composition : "#2 is a composition on #1" | $#2 : #1 \times #1 \longrightarrow #1$
 associative_on : "#2 is associative on #1" | $\forall x,y,z\in #1,\ #2(x,#2(y,z))=#2(#2(x,y),z)$
 commutative_on : "#2 is commutative on #1" | $\forall x,y\in #1,\ #2(x,y)=#2(y,x)$
 neutral_element : "#3 is a neutral element for #2 on #1" | $\forall x\in #1,\ #2(x,#3)=#2(#3,x)=x$
