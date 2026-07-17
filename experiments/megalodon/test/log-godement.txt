@@ -107,3 +107,18 @@ ln -s ../../../../mgwiki/god1/mglib/God1.mg
 
 make md2dk
 
+Extract just the Godement book from § 6 (manually) to file GodGod.mg, remove comments that disturb parsing of Megalodon:
+
+grep -v "//GOD" GodGod.mg | grep -v "§" >gg.mg
+../TryMegalodon gg.mg | grep DEDUKTI >godbook.dk
+
+Should be good for now, because:
+
+../TryMegalodon gg.mg | grep FAIL | wc            
+    3052  270103 1545809
+../TryMegalodon gg.mg | grep SUCC | wc
+   39967  886728 5367695
+
+
+
+
