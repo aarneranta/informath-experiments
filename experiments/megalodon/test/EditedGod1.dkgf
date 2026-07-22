@@ -2,6 +2,7 @@ Type : "type"
 type : "small type"
 arr : "mapping from #1 to #2" | $#1 \rightarrow #2$
 set : "set"
+Elem : "element of #1"
 prop : "proposition"
 pf : "proof of #1"
 Ap : "#3 applied to #4" | $#3(#4)$
